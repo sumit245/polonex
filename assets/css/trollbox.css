@@ -1,0 +1,85 @@
+
+    .trollbox-container {
+        width: 348px;
+        height: auto;
+        position: fixed;
+        bottom: 0;
+        right: 26px;
+        z-index: 100;
+        box-shadow: 0 1px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    .trollbox-iframe {
+        width: 100%;
+        height: 460px;
+        background-color: white;
+        border: none;
+    }
+
+    .trollbox-container .trollbox-header {
+        height: 40px;
+        background-color: #068485;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        fill: #FFFFFF;
+        font-family: "proxima-nova";
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        line-height: 40px;
+        padding: 9px 18px;
+        cursor: pointer;
+    }
+
+    .trollbox-container .trollbox-header svg {
+        vertical-align: top;
+    }
+
+    .trollbox-container .trollbox-header span {
+        vertical-align: top;
+        height: 20px;
+        line-height: 22px;
+        margin-left: 6px;
+        position: relative;
+    }
+
+    .trollbox-container .trollbox-header .svg-text-size {
+        float: right;
+        margin-top: 4px;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+
+    .trollbox-container .trollbox-header .svg-pop-out-window {
+        float: right;
+        margin-top: 4px;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+
+    .trollbox-container .trollbox-header .svg-text-size {
+        display: none;
+    }
+
+    .trollbox-container .trollbox-header .svg-pop-out-window {
+        display: none;
+    }
+
+    .trollbox-container .trollbox-header .svg--caret {
+        transform: rotate(180deg);
+        float: right;
+        margin-top: 9px;
+        cursor: pointer;
+    }
+
+    .trollbox-container.open .trollbox-header .svg--caret {
+        transform: rotate(0deg);
+    }
+
+    .trollbox-container:not(.open) .trollbox-header .svg--trollbox-open {
+        display: none;
+    }
+
+    .trollbox-container.open .trollbox-header .svg--trollbox-closed {
+        display: none
+    }
